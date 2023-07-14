@@ -12,9 +12,9 @@ int main(void)
 	c = 'a';
 	while
 		(c <= '2') {
-			putchar(c);
+			putchar (c);
 			c++;
 		}
 	putchar ('\n');
-	return(0);
+	return (0);
 }
