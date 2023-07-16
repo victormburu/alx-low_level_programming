@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
+ * Description 'having that alphabet soup'
  * Return: Always 0
  */
 int main(void)
