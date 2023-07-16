@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * Description 'I sometimes suffer from'
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char c;
-	
+
 	c = 'a';
 	while
-		(c <= '2') {
-			putchar (c);
+		(c <= 'z')
+		{
+			putchar(c);
 			c++;
 		}
 	putchar ('\n');
