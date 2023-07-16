@@ -16,10 +16,10 @@ int main(void)
 			putchar(dig_2  + '0');
 
 			if (dig_1 != 8 || dig_2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
