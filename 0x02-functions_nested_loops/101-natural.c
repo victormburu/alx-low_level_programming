@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
- * main p Prints the sum of all multiples of 3 or 5 up to 1024
+ * * main - Entry point
+ *
+ * Description: 'Prints the sum of all multiples of 3 or 5 up to 1024'
+ *
  * Return: Always (Success)
  */
 int main(void)
