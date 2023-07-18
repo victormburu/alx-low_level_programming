@@ -1,20 +1,35 @@
 #include <stdio.h>
 /**
- * main p Prints the sum of all multiples of 3 or 5 up to 1024
- * Return: Always (Success)
+ * main - Entry point
+ * Description 'prints the first 50 Fibonacci numbers, starting with 1 and 2'
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	int i, z =0;
+	int i = 0;
+	long j = 1, k = 2;
 
-	while (i < 1024)
+	while (i < 50)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
+		if (i == 0)
 		{
-			z += i;
+			printf("%ld", j);
 		}
-		i++;
-	}
-	printf("%d\n", z);
-	return (0);
+			else if (i == 1)
+			{
+				printf(",%ld", k);
+			}
+				else
+				{
+					k += j;
+					j = k - j;
+					{
+						printf(",%ld", k);
+					}
+				}
+				++i;
+			}
+			printf("\n");
+			return (0);
 }
