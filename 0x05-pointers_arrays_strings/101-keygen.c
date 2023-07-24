@@ -3,9 +3,11 @@
 #include <time.h>
 
 /**
- * main _ generate random valid passwors for the
+ * main - Entry point
+ *
+ * Description: generate random valid passwords
  * program 101-crakme
- * return: always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
