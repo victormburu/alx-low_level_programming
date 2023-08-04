@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isdigit -  checks if a character is a digit 0 - 9
+ * _isdigit -  a function to checks if a character is a digit 0 - 9
  *
- * @c: input
- * @return int Returns 1 if the character is a digit, 0 otherwise.
+ * @c: input value
+ * Returns: 1 if the character is a digit, 0 otherwise.
  */
 int _isdigit(int c)
 {
