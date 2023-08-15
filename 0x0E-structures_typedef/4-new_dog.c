@@ -2,14 +2,14 @@
 #include <stdlib.h>
 /**
  * _strlen - find the length of a string
- * @str: input value
+ * @s: input value
  * Return: the string to be measured
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
 	int len = 0;
 
-	while (*str++)
+	while (*s++)
 		len++;
 	return (len);
 }
@@ -40,22 +40,22 @@ char *_strcopy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *doggo;
+	dog_t *dog;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
-	doggo = malloc(sizeof(dog_t));
-	if (doggo == NULL)
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
 		return (NULL);
-	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (doggo->name == NULL)
+	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (dog->name == NULL)
 	{
-		free(doggo->name);
-		free(doggo);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
-	doggo->name = _strcopy(doggo->name, name);
-	doggo->age = age;
-	doggo->owner = _strcopy(doggo->owner, owner);
-	return (doggo);
+	dog->name = _strcopy(dog->name, name);
+	dog->age = age;
+	dog->owner = _strcopy(dog->owner, owner);
+	return (dog);
 }
